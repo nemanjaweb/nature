@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  height: 72px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #00b960;
+  font-size: 48px;
+  height: 48px;
+  padding-top: 8px;
+  box-shadow: 0px, 4px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.logo p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-left: 10px;
+  background: linear-gradient(180deg, #00b960 -14.58%, #00552c 175%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.navbtn {
+  height: 72px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.addnew {
+  width: 132px;
+  height: 46px;
+  background: #00b960;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.logout {
+  width: 132px;
+  height: 46px;
+  background: transparent;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161616;
+  cursor: pointer;
+}
+.logout i {
+  align-items: center;
+  font-size: 18px;
+  margin-right: 5px;
+}
