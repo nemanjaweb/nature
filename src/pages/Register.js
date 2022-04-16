@@ -1,5 +1,10 @@
 import React from "react";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
 import classes from "./Register.module.css";
+
 const Register = () => {
   return (
     <section className={classes.druga}>
@@ -40,7 +45,45 @@ const Register = () => {
           <input type="text" placeholder="Date of Birth" />
         </div>
 
-        <div></div>
+        <div className={classes.radio}>
+          <div>
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="demo-radio-buttons-group-label"
+                defaultValue="female"
+                name="radio-buttons-group"
+              >
+                <div className={classes.active}>
+                  <FormControlLabel
+                    value="female"
+                    control={<Radio />}
+                    label="User"
+                  />
+                  <FormControlLabel
+                    className={classes.admin}
+                    value="male"
+                    control={<Radio />}
+                    label="Admin"
+                  />
+                </div>
+              </RadioGroup>
+            </FormControl>
+          </div>
+        </div>
+        <div>
+          <button className={classes.signbtn}>Sign Up</button>
+        </div>
+        <div className={classes.greenline}>
+          <span></span>
+        </div>
+        <div className={classes.noacc}>
+          <p>
+            Already have account?
+            <span>
+              <b>Login!</b>
+            </span>{" "}
+          </p>
+        </div>
       </label>
     </section>
   );
