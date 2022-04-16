@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Login.module.css";
 import logoLeaf from "../img/logo.png";
+import eye from "../img/eye.png";
 
 const LogIn = () => {
+  const [visible, setVisible] = useState("password");
+
+  const changeView = () => {
+    setVisible(visible === "password" ? "text" : "password");
+  };
+
   return (
     <section className={classes.loginWrapper}>
       <div className={classes.login}>
@@ -16,23 +23,28 @@ const LogIn = () => {
           Log in to your account<span>.</span>
         </h1>
       </div>
-      <div className={classes.username}>
-        <input type="text" placeholder="Username" />
-      </div>
-      <div className={classes.username}>
-        <p>Password</p>
-        <label>
-          <input type="password" placeholder="***************" />
-        </label>
-      </div>
-      <div className={classes.forgot}>
-        <p>Forgot Password?</p>
-      </div>
-      <div>
-        <button className={classes.logbtn}>Log in</button>
-      </div>
-      <div className={classes.greenline}>
-        <span></span>
+      <div className={classes.formWrapper}>
+        <input
+          type="text"
+          placeholder="Username"
+          className={classes.username}
+        />
+        <div className={classes.passwordWrapper}>
+          <label className={classes.passwordLabel}>Password</label>
+          <input
+            type={visible}
+            placeholder="***************"
+            className={classes.password}
+          />
+          <img src={eye} alt="eye-icon" onClick={() => changeView()} />
+        </div>
+
+        <div className={classes.forgot}>
+          <p>Forgot Password?</p>
+        </div>
+        <div>
+          <button className={classes.logbtn}>Log in</button>
+        </div>
       </div>
       <div className={classes.noacc}>
         <p>

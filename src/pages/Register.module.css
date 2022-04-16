@@ -13,6 +13,8 @@
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
+  padding-left: 108px;
+  padding-top: 51px;
 }
 .register {
   display: flex;
