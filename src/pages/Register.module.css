@@ -1,6 +1,18 @@
-.druga {
+.registerWrapper {
   background-color: #282a37;
   height: 100vh;
+  background-image: linear-gradient(
+      65deg,
+      rgba(40, 42, 55, 1) 10%,
+      rgba(40, 42, 55, 1) 10%,
+      rgba(40, 42, 55, 1) 68%,
+      rgba(40, 42, 55, 0.1) 100%
+    ),
+    url(../img/img-1.png);
+
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 .register {
   display: flex;

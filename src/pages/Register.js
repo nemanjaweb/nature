@@ -4,13 +4,14 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import classes from "./Register.module.css";
+import logoLeaf from "../img/logo.png";
 
 const Register = () => {
   return (
-    <section className={classes.druga}>
+    <section className={classes.registerWrapper}>
       <div className={classes.register}>
         <div className={classes.logo}>
-          <i class="fa-solid fa-leaf"></i>
+          <img src={logoLeaf} alt="logo" />
           <p>Nature</p>
         </div>
       </div>

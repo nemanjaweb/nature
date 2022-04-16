@@ -1,7 +1,35 @@
-.prva {
+.loginWrapper {
   background-color: #282a37;
   height: 100vh;
+  background-image: linear-gradient(
+      65deg,
+      rgba(40, 42, 55, 1) 10%,
+      rgba(40, 42, 55, 1) 10%,
+      rgba(40, 42, 55, 1) 68%,
+      rgba(40, 42, 55, 0.1) 100%
+    ),
+    url(../img/img-1.png);
+
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
+/* .loginWrapper::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    16deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 66%,
+    rgba(255, 255, 255, 1) 100%
+  );
+} */
 
 .login {
   display: flex;

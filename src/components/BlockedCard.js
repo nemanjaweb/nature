@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./BlockedCard.module.css";
+import xSmile from "../img/x-smiley.png";
 
 const BlockedCard = () => {
   return (
     <div className={classes.blocked}>
       <div className={classes.blockedText}>
-        <i class="fa-solid fa-circle-xmark"></i>
+        <img src={xSmile} alt="bad-smile" />
         <p>
           Sorry,<br></br> your profile is blocked. <br></br>Contact the admin
         </p>

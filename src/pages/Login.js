@@ -1,12 +1,13 @@
 import React from "react";
 import classes from "./Login.module.css";
+import logoLeaf from "../img/logo.png";
 
 const LogIn = () => {
   return (
-    <section className={classes.prva}>
+    <section className={classes.loginWrapper}>
       <div className={classes.login}>
         <div className={classes.logo}>
-          <i class="fa-solid fa-leaf"></i>
+          <img src={logoLeaf} alt="logo" />
           <p>Nature</p>
         </div>
       </div>
@@ -27,14 +28,12 @@ const LogIn = () => {
       <div className={classes.forgot}>
         <p>Forgot Password?</p>
       </div>
-
       <div>
         <button className={classes.logbtn}>Log in</button>
       </div>
       <div className={classes.greenline}>
         <span></span>
       </div>
-
       <div className={classes.noacc}>
         <p>
           Dont have an account?
