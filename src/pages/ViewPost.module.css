@@ -1,0 +1,68 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 63px;
+  position: relative;
+}
+.btnWrapper {
+  display: flex;
+}
+.passenger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 47px;
+  padding: 10px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #161616;
+}
+
+.picnic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 47px;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #161616;
+  border: none;
+  padding: 10px;
+}
+
+.postImg img {
+  margin-top: 20px;
+  width: 858px;
+  height: 724px;
+  border-radius: 16px;
+}
+.blurImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 56px;
+  width: 858px;
+  background: rgba(22, 22, 22, 0.5);
+  backdrop-filter: blur(40px);
+  border-radius: 0 0 16px 16px;
+  -webkit-border-radius: 0 0 16px 16px;
+  -moz-border-radius: 0 0 16px 16px;
+  -ms-border-radius: 0 0 16px 16px;
+  -o-border-radius: 0 0 16px 16px;
+}
+.icons {
+  height: 19.38px !important;
+  width: 22.34px !important;
+}

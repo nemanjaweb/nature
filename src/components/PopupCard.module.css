@@ -1,0 +1,55 @@
+.blocked {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 382px;
+  height: 292px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+}
+.close {
+  position: absolute;
+  top: -30px;
+  right: 23px;
+  cursor: pointer;
+}
+
+.blocked img {
+  padding-top: 50px;
+  color: #00b960;
+  font-size: 33px;
+}
+.blockedText {
+  width: 351px;
+  height: 84px;
+}
+.blocked p {
+  padding-top: 21.33px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #161616;
+}
+
+.grayBtn {
+  border: none;
+  margin-top: 42px;
+  width: 160px;
+  height: 56px;
+  border-radius: 100px;
+  background-color: #eaeaf5;
+  margin-right: 26px;
+  cursor: pointer;
+}
+.greenBtn {
+  border: none;
+  margin-top: 42px;
+  width: 160px;
+  height: 56px;
+  border-radius: 100px;
+  background-color: #00b960;
+  color: #fff;
+  cursor: pointer;
+}

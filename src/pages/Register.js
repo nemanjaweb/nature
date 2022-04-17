@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import classes from "./Register.module.css";
 import logoLeaf from "../img/logo.png";
 
 const Register = () => {
+  const [value, setValue] = useState(null);
+  const color = "#fff";
+
   return (
     <section className={classes.registerWrapper}>
       <div className={classes.register}>
@@ -20,16 +27,16 @@ const Register = () => {
           Create new account<span>.</span>
         </h1>
       </div>
-      <label>
-        <div className={classes.firstname}>
-          <input type="text" placeholder="First Name" />
-          <input
-            type="text"
-            placeholder="Last Name"
-            className={classes.lastname}
-          />
-        </div>
 
+      <div className={classes.firstname}>
+        <input type="text" placeholder="First Name" />
+        <input
+          type="text"
+          placeholder="Last Name"
+          className={classes.lastname}
+        />
+      </div>
+      <div className={classes.fromWrapper}>
         <div className={classes.username}>
           <input type="text" placeholder="Username" />
         </div>
@@ -42,8 +49,29 @@ const Register = () => {
         <div className={classes.username}>
           <input type="password" placeholder="Confirm Password" />
         </div>
-        <div className={classes.username}>
-          <input type="text" placeholder="Date of Birth" />
+        <div className={classes.birth}>
+          <LocalizationProvider dateAdapter={AdapterDateFns}>
+            <DatePicker
+              label="Date of birth"
+              value={value}
+              onChange={(newValue) => {
+                setValue(newValue);
+              }}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  // fullWidth
+                  sx={{
+                    width: "100%",
+                    svg: { color },
+                    input: { color },
+                    label: { color },
+                    border: "none",
+                  }}
+                />
+              )}
+            />
+          </LocalizationProvider>
         </div>
 
         <div className={classes.radio}>
@@ -71,12 +99,10 @@ const Register = () => {
             </FormControl>
           </div>
         </div>
-        <div>
+        <div className={classes.sign}>
           <button className={classes.signbtn}>Sign Up</button>
         </div>
-        <div className={classes.greenline}>
-          <span></span>
-        </div>
+
         <div className={classes.noacc}>
           <p>
             Already have account?
@@ -85,7 +111,7 @@ const Register = () => {
             </span>{" "}
           </p>
         </div>
-      </label>
+      </div>
     </section>
   );
 };

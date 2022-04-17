@@ -1,11 +1,11 @@
 .registerWrapper {
   background-color: #282a37;
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(
-      65deg,
+      77deg,
       rgba(40, 42, 55, 1) 10%,
       rgba(40, 42, 55, 1) 10%,
-      rgba(40, 42, 55, 1) 68%,
+      rgba(40, 42, 55, 1) 62%,
       rgba(40, 42, 55, 0.1) 100%
     ),
     url(../img/img-1.png);
@@ -37,7 +37,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .title {
@@ -45,16 +44,19 @@
   line-height: 72px;
   font-weight: 600;
   color: #fff;
+  margin-top: 48px;
 }
 .title span {
   color: #00b960;
 }
 .firstname {
   display: flex;
+  margin-top: 57.5px;
 }
 .firstname input {
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid #a8a7a7;
   font-size: 16px;
   font-weight: 400;
   width: 217px;
@@ -68,6 +70,28 @@
 }
 .lastname {
   margin-left: 36px;
+}
+.formWrapper {
+  width: 470px;
+  border-bottom: 1px solid #00b960;
+  padding-bottom: 24px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  color: #fff;
+}
+.formWrapper input:active,
+.formWrapper input:focus {
+  outline: none;
+}
+.formWrapper input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.username {
+  margin-top: 56px;
 }
 
 .username input::placeholder {
@@ -91,8 +115,17 @@
   border: none;
   border-bottom: 1px solid #a8a7a7;
 }
+
+.birth {
+  margin-top: 47.5px;
+  width: 470px;
+}
+.birthInput {
+  width: 100% !important;
+}
 .radio {
   display: flex;
+  margin-top: 43px;
 }
 .active {
   color: #fff;
@@ -100,26 +133,31 @@
 .admin {
   margin-left: 40px;
 }
-
+.sign {
+  border-bottom: 1px solid #00b960;
+  width: 470px;
+  padding-bottom: 24px;
+}
 .signbtn {
   background-color: #00b960;
   color: #fff;
   width: 470px;
   height: 56px;
   border-radius: 100px;
+  margin-top: 53px;
+  cursor: pointer;
 }
-.greenline span {
-  margin-top: 20px;
-  width: 470px;
-  height: 1px;
-  background-color: #00b960;
-}
+
 .noacc {
+  width: 470px;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.06em;
   color: #ffffff;
+  margin-top: 24px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 .noacc span {
   font-weight: 600;
@@ -127,4 +165,5 @@
   line-height: 24px;
   letter-spacing: 0.06em;
   color: #00b960;
+  cursor: pointer;
 }

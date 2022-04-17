@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Posts.module.css";
 const Posts = () => {
   return (
-    <div className={classes.nesto}>
+    <div className={classes.postWrapper}>
       <div className={classes.post}>
         <div className={classes.personal}>
           <img
