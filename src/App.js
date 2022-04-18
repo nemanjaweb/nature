@@ -10,14 +10,14 @@ import Admin from "./pages/Admin";
 function App() {
   return (
     <div>
-      <Login></Login>
-      <Register></Register>
-      <Home></Home>
+      {/* <Login></Login> */}
+      {/* <Register></Register> */}
+      {/* <Home></Home>  */}
       {/* <BlockedCard /> */}
-      {/* <PopupCard></PopupCard> */}
-      <ViewPost />
-      <Profile />
-      <NewPost></NewPost>
+      {/* <PopupCard></PopupCard>  */}
+      {/* <ViewPost />  */}
+      {/* <Profile /> */}
+      {/* <NewPost></NewPost> */}
       <Admin></Admin>
     </div>
   );

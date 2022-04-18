@@ -76,12 +76,12 @@
   border-bottom: 1px solid #00b960;
   padding-bottom: 24px;
 }
-input:focus,
+/* input:focus,
 textarea:focus,
 select:focus {
   outline: none;
   color: #fff;
-}
+} */
 .formWrapper input:active,
 .formWrapper input:focus {
   outline: none;

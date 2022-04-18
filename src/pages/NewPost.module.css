@@ -8,10 +8,27 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 644px;
+  height: 748px;
 }
 .imgSection {
   width: 473.3px;
   height: 588.56px;
+}
+.imgWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.waterfallIcon {
+  position: absolute;
+  left: 0;
+  bottom: 152px;
+}
+.mountainIcon {
+  position: absolute;
+  right: 0;
+  bottom: 31px;
 }
 .imgOne {
   position: relative;
@@ -25,6 +42,7 @@
   box-shadow: rgba(0, 0, 0, 0.16);
 }
 .imgTwo {
+  top: 0;
   position: absolute;
   width: 352px;
   height: 515px;
@@ -67,7 +85,7 @@
 .postInputWrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 218px;
+  margin-left: 60px;
 }
 
 .postInputWrapper h1 {
@@ -75,12 +93,15 @@
   font-size: 48px;
   line-height: 72px;
   color: #161616;
+  margin-bottom: 40px;
 }
 .postInputWrapper span {
   color: #00b960;
 }
 .postInput {
+  font-family: "Poppins";
   width: 589px;
+  padding: 18px 60px;
   height: auto;
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
@@ -88,19 +109,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+  color: #a8a7a7;
 }
-.inputOne {
-  margin-top: 35.5px;
+
+.dropInput {
+  margin-bottom: 32px !important;
 }
-.postInput input {
-  width: 470px;
-  height: 24px;
-  border: 0;
-  border-bottom: 1px solid #a8a7a7;
-  color: black;
-  outline: none;
-  margin-bottom: 49.5px;
-}
+
 .postInput input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -128,6 +149,7 @@
   margin-bottom: 16px;
 }
 .greenBtn {
+  margin-top: 48px;
   background: #00b960;
   color: #fff;
 }

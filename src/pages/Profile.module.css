@@ -66,6 +66,12 @@
 .leftWrapperInfo {
   display: flex;
 }
+.leftWrapperInfo img {
+  margin-right: 18px;
+}
+.leftWrapperInfo span {
+  margin-bottom: 22px;
+}
 .userWrapperRight {
   display: flex;
   align-items: center;

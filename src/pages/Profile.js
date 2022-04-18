@@ -28,15 +28,22 @@ const Profile = () => {
           <div className={classes.userWrapperLeft}>
             <h5>User information</h5>
             <div className={classes.leftWrapperInfo}>
-              <img src={email} alt="email-icon" />
+              <span>
+                <img src={email} alt="email-icon" />
+              </span>
+
               <p>john.brown@gmail.com</p>
             </div>
             <div className={classes.leftWrapperInfo}>
-              <img src={user} alt="user-icon" />
+              <span>
+                <img src={user} alt="user-icon" />
+              </span>
               <p>User</p>
             </div>
             <div className={classes.leftWrapperInfo}>
-              <img src={calendar} alt="calendar-icon" />
+              <span>
+                <img src={calendar} alt="calendar-icon" />
+              </span>
               <p>12/06/1992</p>
             </div>
           </div>
