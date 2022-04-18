@@ -41,9 +41,10 @@
 }
 .userWrapper {
   margin-top: 112px;
+  display: flex;
 }
-.userWrapper div {
-  display: inline-block;
+.userWrapper .userWrapperLeft,
+.userWrapper .userWrapperRight {
   width: 445px;
   height: 190px;
   background: #ffffff;
@@ -52,7 +53,36 @@
 }
 .userWrapperLeft {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   margin-right: 18px;
+  padding: 16px;
+}
+.userWrapperLeft h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #161616;
+}
+.leftWrapperInfo {
+  display: flex;
+}
+.userWrapperRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.userWrapperRight p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #00b960;
+}
+.userWrapperRight span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00b960;
+}
+.rightContent {
+  text-align: center;
 }

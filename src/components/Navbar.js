@@ -1,9 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import classes from "./Navbar.module.css";
 import logoLeaf from "../img/logo.png";
 import logOut from "../img/logout-vector.png";
 
 const Navbar = () => {
+  function signOut() {
+    console.log("clicked");
+  }
+
   return (
     <div className={classes.navbar}>
       <div className={classes.logo}>
@@ -14,7 +19,7 @@ const Navbar = () => {
         <button className={classes.addnew}>
           <span>+</span>Add New
         </button>
-        <button className={classes.logout}>
+        <button className={classes.logout} onClick={signOut}>
           <span>
             <img src={logOut} alt="log-out" />
           </span>

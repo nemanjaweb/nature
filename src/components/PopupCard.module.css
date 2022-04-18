@@ -2,11 +2,14 @@
   display: flex;
   position: relative;
   justify-content: center;
+
+  margin: -800px auto;
   width: 382px;
   height: 292px;
   background: #fff;
   border-radius: 16px;
   text-align: center;
+  z-index: 10;
 }
 .close {
   position: absolute;

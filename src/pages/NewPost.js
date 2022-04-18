@@ -36,8 +36,6 @@ const NewPost = () => {
               className={classes.inputOne}
             ></input>
             <input type="text" placeholder="Place"></input>
-            <input type="text" placeholder="Name"></input>
-
             <Stack spacing={1} sx={{ width: 470 }}>
               <Autocomplete
                 {...defaultProps}
