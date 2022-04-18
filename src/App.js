@@ -4,7 +4,9 @@ import Home from "./pages/Home";
 import BlockedCard from "./components/BlockedCard";
 import PopupCard from "./components/PopupCard";
 import ViewPost from "./pages/ViewPost";
-
+import Profile from "./pages/Profile";
+import NewPost from "./pages/NewPost";
+import Admin from "./pages/Admin";
 function App() {
   return (
     <div>
@@ -13,7 +15,10 @@ function App() {
       {/* <Home></Home> */}
       {/* <BlockedCard /> */}
       {/* <PopupCard></PopupCard> */}
-      <ViewPost />
+      {/* <ViewPost /> */}
+      {/* <Profile /> */}
+      {/* <NewPost></NewPost> */}
+      <Admin></Admin>
     </div>
   );
 }
