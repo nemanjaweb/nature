@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -18,7 +19,10 @@ const Register = () => {
     <section className={classes.registerWrapper}>
       <div className={classes.register}>
         <div className={classes.logo}>
-          <img src={logoLeaf} alt="logo" />
+          <Link to="/">
+            <img src={logoLeaf} alt="logo" />
+          </Link>
+
           <p>Nature</p>
         </div>
       </div>
@@ -107,7 +111,9 @@ const Register = () => {
           <p>
             Already have account?
             <span>
-              <b>Login!</b>
+              <Link to="/" className={classes.login}>
+                <b>Login!</b>
+              </Link>
             </span>{" "}
           </p>
         </div>

@@ -6,6 +6,7 @@ import ViewPost from "./pages/ViewPost";
 import Profile from "./pages/Profile";
 import NewPost from "./pages/NewPost";
 import Admin from "./pages/Admin";
+
 function App() {
   return (
     <div>
@@ -13,8 +14,8 @@ function App() {
         <Route path="/" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/post" element={<ViewPost />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/home/view-post" element={<ViewPost />}></Route>
+        <Route path="/home/profile" element={<Profile />}></Route>
         <Route path="/new-post" element={<NewPost />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
       </Routes>

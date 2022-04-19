@@ -168,3 +168,7 @@ select:focus {
   color: #00b960;
   cursor: pointer;
 }
+.login {
+  color: #00b960;
+  text-decoration: none;
+}

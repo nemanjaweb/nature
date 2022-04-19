@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import classes from "./Navbar.module.css";
 import logoLeaf from "../img/logo.png";
 import logOut from "../img/logout-vector.png";
@@ -13,13 +12,18 @@ const Navbar = () => {
   return (
     <div className={classes.navbar}>
       <div className={classes.logo}>
-        <img src={logoLeaf} alt="logo" style={"cursor:pointer"} />
+        <Link to="/">
+          <img src={logoLeaf} alt="logo" className={classes.logo} />
+        </Link>
         <p>Nature</p>
       </div>
       <div className={classes.navbtn}>
-        <button className={classes.addnew}>
-          <span>+</span>Add New
-        </button>
+        <Link to="/new-post">
+          <button className={classes.addnew}>
+            <span>+</span>Add New
+          </button>
+        </Link>
+
         <button className={classes.logout} onClick={signOut}>
           <span>
             <img src={logOut} alt="log-out" />

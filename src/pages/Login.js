@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classes from "./Login.module.css";
 import logoLeaf from "../img/logo.png";
 import eye from "../img/eye.png";
@@ -44,18 +44,18 @@ const LogIn = () => {
           <p>Forgot Password?</p>
         </div>
         <div>
-          {/* <Link to="/home"> */}
-          <button className={classes.logbtn}>Log in</button>
-          {/* </Link> */}
+          <Link to="/home">
+            <button className={classes.logbtn}>Log in</button>
+          </Link>
         </div>
       </div>
       <div className={classes.noacc}>
         <p>
           Dont have an account?
           <span>
-            {/* <Link to="/register" className={classes.register}> */}
-            <b>Register!</b>
-            {/* </Link> */}
+            <Link to="/register" className={classes.register}>
+              <b>Register!</b>
+            </Link>
           </span>
         </p>
       </div>

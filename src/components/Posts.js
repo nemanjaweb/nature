@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Posts.module.css";
 const Posts = (props) => {
   return (
@@ -6,8 +7,11 @@ const Posts = (props) => {
       <div className={classes.post}>
         <div className={classes.personal}>
           <img className={classes.avatar} src={props.avatar} alt="avatar"></img>
-          <div>
-            <p>{props.name}</p>
+          <div className={classes.personalName}>
+            <Link to="/home/profile">
+              <p>{props.name}</p>
+            </Link>
+
             <div className={classes.accessibility}>
               <div className={classes.passenger}>
                 <p>{props.descriptionOne}</p>
@@ -24,7 +28,9 @@ const Posts = (props) => {
         </div>
 
         <div>
-          <img className={classes.postImg} src={props.image} alt="post"></img>
+          <Link to="/home/view-post">
+            <img className={classes.postImg} src={props.image} alt="post"></img>
+          </Link>
         </div>
         <div className={classes.repost}>
           <i class="fa-solid fa-thumbs-up"></i>{" "}

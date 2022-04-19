@@ -25,6 +25,9 @@
 .personal {
   display: flex;
 }
+.personalName p {
+  text-decoration: none;
+}
 .personal p {
   font-style: normal;
   font-weight: 600;
@@ -90,6 +93,7 @@
   width: 844px;
   height: 584px;
   border-radius: 16px;
+  cursor: pointer;
 }
 .repost {
   display: flex;

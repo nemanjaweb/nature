@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Profile.module.css";
 import Navbar from "../components/Navbar";
 import cover from "../img/cover.png";
@@ -22,6 +23,7 @@ const Profile = () => {
         </div>
         <div className={classes.userInf}>
           <p>John Brown</p>
+
           <span>@john.brown12</span>
         </div>
         <div className={classes.userWrapper}>
