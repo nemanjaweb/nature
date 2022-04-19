@@ -8,16 +8,18 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import block from "../img/block.svg";
+import unblock from "../img/unblock.svg";
 
 function createData(
-  avatar: string,
-  name: string,
-  userTag: string,
-  mail: string,
-  date: string,
-  userRank: string,
-  statusIcon: string,
-  status: string
+  avatar,
+  name,
+  userTag,
+  mail,
+  date,
+  userRank,
+  statusIcon,
+  status
 ) {
   return {
     avatar,
@@ -39,7 +41,7 @@ const rows = [
     "gianna.williams@gmail.com",
     "01/03/2022",
     "User",
-    "https://cdn-icons-png.flaticon.com/512/101/101783.png",
+    block,
     "Block"
   ),
   createData(
@@ -49,7 +51,7 @@ const rows = [
     "john.patterson@gmail.com",
     "01/03/2022",
     "User",
-    "https://cdn-icons-png.flaticon.com/512/1632/1632692.png",
+    unblock,
     "Unblock"
   ),
   createData(
@@ -59,8 +61,6 @@ const rows = [
     "william.collins@gmail.com",
     "01/03/2022",
     "User"
-    // "https://cdn-icons-png.flaticon.com/512/101/101783.png",
-    // "Block"
   ),
   createData(
     "https://s3-alpha-sig.figma.com/img/bf7f/a5fa/bcfc06bba06652c803fe9f1827176c1d?Expires=1651449600&Signature=FDT27TWuE7WXXBDRiJgzfI6TnBHmjdv8nhubwlQHO8pnV8NlIoqNPqmEoDCyxIBkbbrPEXJb~zdEGrLRa9h9TiCTjosHNUe7kaVruPVQzxm~PC6hRVz7j8jmzZFZFiOLVjw2PyptZddgpk9TABATKtG6xrjE-VuEfShZNtFPbraOjifF~hrb6UPI6pXzyOPKxA3r4kkdLSclOgSHIkXseUuaS0rm9DOrMhJxBeT00lBgzXs4Zm1UZ9XlDYZTNwc6uU0xffEhto9BdNn2VMF4~8aN~-Ys1amruKtKtvf6WCokOa6-jxRD~N1pgmNNoeNB3EBI5~9wFcOaGi48BOJECw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
@@ -69,7 +69,7 @@ const rows = [
     "marwin.cassey@gmail.com",
     "01/03/2022",
     "User",
-    "https://cdn-icons-png.flaticon.com/512/1632/1632692.png",
+    unblock,
     "Unblock"
   ),
   createData(
@@ -79,7 +79,7 @@ const rows = [
     "angie.alexander@gmail.com",
     "01/03/2022",
     "User",
-    "https://cdn-icons-png.flaticon.com/512/101/101783.png",
+    block,
     "Block"
   ),
   createData(
@@ -97,7 +97,7 @@ const rows = [
     "marwin.cassey@gmail.com",
     "01/03/2022",
     "User",
-    "https://cdn-icons-png.flaticon.com/512/1632/1632692.png",
+    unblock,
     "Unblock"
   ),
   createData(
@@ -107,7 +107,7 @@ const rows = [
     "angie.alexander@gmail.com",
     "01/03/2022",
     "User",
-    "https://cdn-icons-png.flaticon.com/512/101/101783.png",
+    block,
     "Block"
   ),
   createData(
@@ -125,7 +125,7 @@ const rows = [
     "angie.alexander@gmail.com",
     "01/03/2022",
     "User",
-    "https://cdn-icons-png.flaticon.com/512/101/101783.png",
+    block,
     "Block"
   ),
   createData(
@@ -163,35 +163,38 @@ const Admin = () => {
               <TableBody>
                 {rows.map((row) => (
                   <TableRow key={row.name} className={classes.row}>
-                    {/* component="th" scope="row" */}
                     <TableCell style={{}}>
-                      <img
-                        style={{
-                          height: "35px",
-                          width: "35px",
-                          borderRadius: "50%",
-                          marginRight: "12px",
-                        }}
-                        src={row.avatar}
-                        alt=""
-                      />
-                      {row.name}
+                      <div style={{ display: "flex", alignItems: "center" }}>
+                        <img
+                          style={{
+                            height: "35px",
+                            width: "35px",
+                            borderRadius: "50%",
+                            marginRight: "12px",
+                          }}
+                          src={row.avatar}
+                          alt=""
+                        />
+                        {row.name}
+                      </div>
                     </TableCell>
                     <TableCell>{row.userTag}</TableCell>
                     <TableCell>{row.mail}</TableCell>
                     <TableCell>{row.date}</TableCell>
                     <TableCell>{row.userRank}</TableCell>
                     <TableCell>
-                      <img
-                        style={{
-                          height: "18px",
-                          borderRadius: "50%",
-                          marginRight: "12px",
-                        }}
-                        src={row.statusIcon}
-                        alt=""
-                      />
-                      {row.status}
+                      <div style={{ display: "flex" }}>
+                        <img
+                          style={{
+                            height: "18px",
+                            borderRadius: "50%",
+                            marginRight: "12px",
+                          }}
+                          src={row.statusIcon}
+                          alt=""
+                        />
+                        {row.status}
+                      </div>
                     </TableCell>
                   </TableRow>
                 ))}
