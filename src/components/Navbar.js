@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import classes from "./Navbar.module.css";
 import logoLeaf from "../img/logo.png";
 import logOut from "../img/logout-vector.png";
-
 const Navbar = () => {
-  function signOut() {
-    console.log("clicked");
-  }
-
   return (
     <div className={classes.navbar}>
       <div className={classes.logo}>
@@ -23,13 +18,14 @@ const Navbar = () => {
             <span>+</span>Add New
           </button>
         </Link>
-
-        <button className={classes.logout} onClick={signOut}>
-          <span>
-            <img src={logOut} alt="log-out" />
-          </span>
-          Log Out
-        </button>
+        <Link to="/home/popup">
+          <button className={classes.logout}>
+            <span>
+              <img src={logOut} alt="log-out" />
+            </span>
+            Log Out
+          </button>
+        </Link>
       </div>
     </div>
   );

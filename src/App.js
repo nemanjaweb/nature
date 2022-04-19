@@ -6,6 +6,7 @@ import ViewPost from "./pages/ViewPost";
 import Profile from "./pages/Profile";
 import NewPost from "./pages/NewPost";
 import Admin from "./pages/Admin";
+import PopupCard from "./components/PopupCard";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/home/profile" element={<Profile />}></Route>
         <Route path="/new-post" element={<NewPost />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
+        <Route path="/home/popup" element={<PopupCard />}></Route>
       </Routes>
     </div>
   );
