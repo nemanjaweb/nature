@@ -13,7 +13,7 @@
   font-size: 48px;
   height: 48px;
   box-shadow: 0px, 4px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .logo p {
   font-size: 18px;

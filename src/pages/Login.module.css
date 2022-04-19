@@ -27,6 +27,7 @@
   color: #00b960;
   font-size: 48px;
   height: 48px;
+  cursor: pointer;
 }
 .logo p {
   font-size: 18px;
@@ -148,4 +149,8 @@
   letter-spacing: 0.06em;
   color: #00b960;
   cursor: pointer;
+}
+.register {
+  color: #00b960;
+  text-decoration: none;
 }

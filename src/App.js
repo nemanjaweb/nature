@@ -1,10 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import BlockedCard from "./components/BlockedCard";
-import PopupCard from "./components/PopupCard";
 import ViewPost from "./pages/ViewPost";
 import Profile from "./pages/Profile";
 import NewPost from "./pages/NewPost";
@@ -21,15 +18,6 @@ function App() {
         <Route path="/new-post" element={<NewPost />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
       </Routes>
-
-      {/* <Register></Register> */}
-      {/* <Home></Home>  */}
-      {/* <BlockedCard /> */}
-      {/* <PopupCard></PopupCard>  */}
-      {/* <ViewPost />  */}
-      {/* <Profile /> */}
-      {/* <NewPost></NewPost> */}
-      {/* <Admin></Admin> */}
     </div>
   );
 }

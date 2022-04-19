@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "./Home.module.css";
 import Navbar from "../components/Navbar";
 import Posts from "../components/Posts";
 import avatar1 from "../img/avatar1.png";
