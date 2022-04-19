@@ -1,3 +1,5 @@
+import { Route, Routes } from "react-router-dom";
+
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -10,7 +12,16 @@ import Admin from "./pages/Admin";
 function App() {
   return (
     <div>
-      {/* <Login></Login> */}
+      <Routes>
+        <Route path="/" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/post" element={<ViewPost />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/new-post" element={<NewPost />}></Route>
+        <Route path="/admin" element={<Admin />}></Route>
+      </Routes>
+
       {/* <Register></Register> */}
       {/* <Home></Home>  */}
       {/* <BlockedCard /> */}
@@ -18,7 +29,7 @@ function App() {
       {/* <ViewPost />  */}
       {/* <Profile /> */}
       {/* <NewPost></NewPost> */}
-      <Admin></Admin>
+      {/* <Admin></Admin> */}
     </div>
   );
 }
