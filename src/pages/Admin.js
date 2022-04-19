@@ -60,7 +60,7 @@ const rows = [
     "@William3",
     "william.collins@gmail.com",
     "01/03/2022",
-    "User"
+    "Admin"
   ),
   createData(
     "https://s3-alpha-sig.figma.com/img/bf7f/a5fa/bcfc06bba06652c803fe9f1827176c1d?Expires=1651449600&Signature=FDT27TWuE7WXXBDRiJgzfI6TnBHmjdv8nhubwlQHO8pnV8NlIoqNPqmEoDCyxIBkbbrPEXJb~zdEGrLRa9h9TiCTjosHNUe7kaVruPVQzxm~PC6hRVz7j8jmzZFZFiOLVjw2PyptZddgpk9TABATKtG6xrjE-VuEfShZNtFPbraOjifF~hrb6UPI6pXzyOPKxA3r4kkdLSclOgSHIkXseUuaS0rm9DOrMhJxBeT00lBgzXs4Zm1UZ9XlDYZTNwc6uU0xffEhto9BdNn2VMF4~8aN~-Ys1amruKtKtvf6WCokOa6-jxRD~N1pgmNNoeNB3EBI5~9wFcOaGi48BOJECw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
@@ -88,7 +88,7 @@ const rows = [
     "@William3",
     "william.collins@gmail.com",
     "01/03/2022",
-    "User"
+    "Admin"
   ),
   createData(
     "https://s3-alpha-sig.figma.com/img/bf7f/a5fa/bcfc06bba06652c803fe9f1827176c1d?Expires=1651449600&Signature=FDT27TWuE7WXXBDRiJgzfI6TnBHmjdv8nhubwlQHO8pnV8NlIoqNPqmEoDCyxIBkbbrPEXJb~zdEGrLRa9h9TiCTjosHNUe7kaVruPVQzxm~PC6hRVz7j8jmzZFZFiOLVjw2PyptZddgpk9TABATKtG6xrjE-VuEfShZNtFPbraOjifF~hrb6UPI6pXzyOPKxA3r4kkdLSclOgSHIkXseUuaS0rm9DOrMhJxBeT00lBgzXs4Zm1UZ9XlDYZTNwc6uU0xffEhto9BdNn2VMF4~8aN~-Ys1amruKtKtvf6WCokOa6-jxRD~N1pgmNNoeNB3EBI5~9wFcOaGi48BOJECw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
@@ -116,7 +116,7 @@ const rows = [
     "@William3",
     "william.collins@gmail.com",
     "01/03/2022",
-    "User"
+    "Admin"
   ),
   createData(
     "https://s3-alpha-sig.figma.com/img/c2a1/e6f4/fc91d9494fd35976671dec570d748343?Expires=1651449600&Signature=blWMQhmOO~J7-2JLKKyoN8w9yn1NL9q8VsNHHW1AR~ZF3qF~rF-~oOehRIM19agb0muRKWEeebfCEelo7IZQUv7sXXn640ZFQqPlsvDOSlv4jGA09tDYwRaMUD5ocqT7BAMY~TbJhiCevMidFZOytzp6DcRzLHfdyY76jw9sUOsW7Mim64xd5IFtEANcXB5QpHrY3v7Je-w9OLAlTBNgs60aLXX0pzvsKLeDph5XUFuowJ2B~m8iMCQ38okfFAbKWfZHZS4lFsL-eapoM2mdqg5TA4NDHpz0ou504tyB0EiSsL0d0sfOjcLkgKouGegpfZGPtfUgI7V0VqtKvWzNAw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
@@ -134,7 +134,7 @@ const rows = [
     "@William3",
     "william.collins@gmail.com",
     "01/03/2022",
-    "User"
+    "Admin"
   ),
 ];
 
